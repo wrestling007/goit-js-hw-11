@@ -1,0 +1,39 @@
+{{#each this}}
+  <a href='{{largeImageURL}}' class='photo-card'>
+    <div class='img-wrap'>
+
+      <img class='image' src='{{previewURL}}' alt='{{tags}}' loading='lazy' />
+    </div>
+    <div class='info'>
+      <p class='info-item'>
+        <b>Likes</b>
+        <svg class='info-icon' width='17' height='17'>
+          <use href='#icon-likes'></use>
+        </svg>
+        {{likes}}
+      </p>
+      <p class='info-item'>
+        <b>Comments</b>
+        <svg class='info-icon' width='17' height='17'>
+          <use href='#icon-comments'></use>
+        </svg>
+        {{comments}}
+      </p>
+      <p class='info-item'>
+        <b>Views</b>
+        <svg class='info-icon' width='17' height='17'>
+          <use href='#icon-views'></use>
+        </svg>
+        {{views}}
+      </p>
+
+      <p class='info-item'>
+        <b>Downloads</b>
+        <svg class='info-icon' width='17' height='17'>
+          <use href='#icon-downloads'></use>
+        </svg>
+        {{downloads}}
+      </p>
+    </div>
+  </a>
+{{/each}}
